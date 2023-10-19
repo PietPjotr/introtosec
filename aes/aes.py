@@ -1,4 +1,4 @@
-# authors:      Pjotr Piet, Stefano
+# authors:      Pjotr Piet, Stefano jonjic
 # university:   UvA
 # course:       Introduction to security
 # student id's: 12714933, ?
@@ -247,14 +247,17 @@ def encrypt(pt, key):
 
         cipher += state
 
-    heks = bytes_to_hex(cipher)
-    print(heks.upper())
-
     return cipher
 
 
 def main():
-    encrypt('dats echt mtb ouwe', 'Burden Of Dreams')
+    key = 'Burden Of Dreams'
+    plaintext = 'ieuww ik proef kurkkk'
+
+    cipher = encrypt(plaintext, key)
+
+    heks = bytes_to_hex(cipher)
+    print(heks.upper())
 
 
 if __name__ == "__main__":
