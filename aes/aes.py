@@ -1,7 +1,7 @@
 # authors:      Pjotr Piet, Stefano jonjic
 # university:   UvA
 # course:       Introduction to security
-# student id's: 12714933, ?
+# student id's: 12714933, 13237594
 # description:  This file contains a proper implementation of the AES as
 #  documented in: https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901427
 #  AES uses a key and different non-lineair functions to encrypt and decrypt
@@ -252,7 +252,7 @@ def encrypt(pt, key):
 
 def main():
     key = 'Burden Of Dreams'
-    plaintext = 'ieuww ik proef kurkkk'
+    plaintext = 'Dit is een hele lange test tekst om te testen of de padding ook werkt voor grotere teksten zoals deze. Een mooie testtekst dus.'
 
     cipher = encrypt(plaintext, key)
 
